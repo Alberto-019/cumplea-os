@@ -1,267 +1,165 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Feliz cumpleaños Jonathan</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Feliz cumpleaños Jonathan</title>
 
-  <!-- Fuentes -->
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <!-- Fuentes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="jonathan.css">
+  </head>
+  <body>
+    <main>
+      <!-- STAR AREA: contiene las estrellas estáticas, flotantes y las que caen -->
+      <div class="star-area" aria-hidden="true">
+        <!-- Estrellas estáticas (posiciones iniciales; si quieres las muevo) -->
+        <div class="star s-1" style="top: 10%; left: 8%"></div>
+        <div class="star s-2 tw" style="top: 18%; left: 22%"></div>
+        <div
+          class="star cross"
+          style="top: 12%; left: 34%; opacity: 0.95"
+        ></div>
+        <div class="star s-3" style="top: 22%; left: 48%"></div>
+        <div class="star s-2" style="top: 8%; left: 65%"></div>
+        <div class="star s-1 tw" style="top: 16%; left: 78%"></div>
 
-  <style>
-    * { box-sizing: border-box; }
+        <!-- Unas sparkles que suben levemente (generadas por JS también) -->
+        <!-- Y varias estrellas cayendo (también administradas por JS) -->
+      </div>
 
-    body {
-      margin: 0;
-      font-family: 'Merriweather', serif;
-      background: linear-gradient(to bottom, #e8d2a6, #d8b982);
-      color: #5b3f2a;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      padding: 30px;
-      position: relative;
-      min-height: 100vh;
-      overflow-y: auto; /* permite scroll vertical */
-    }
+      <header>
+        <h1>¡Feliz cumpleaños, Jonathan!</h1>
+        <p>
+          Otro año más sumando historias, risas y buenos recuerdos contigo.
+          Gracias por todos los momentos, por tu forma de ser y por estar
+          siempre ahí. Eres más que un primo, eres alguien con quien da gusto
+          compartir la vida. Te deseo lo mejor hoy y siempre, primo, ¡feliz
+          cumple!
+        </p>
+      </header>
 
-    /* ===== MAIN (pergamino) ===== */
-    main {
-      position: relative;
-      width: 100%;
-      max-width: 980px;
-      color: #5b3f2a;
-      border-radius: 18px;
-      padding: 48px 36px 80px 36px;
-      box-shadow: 0 12px 30px rgba(91,63,42,0.18), inset 0 6px 20px rgba(255,255,255,0.2);
-      border: 3px solid rgba(183,136,79,0.25);
-      z-index: 1;
-      overflow: visible;
-    }
+      <section class="tarjetas" aria-label="mensajes">
+        <article class="tarjeta">
+          <span>1</span>
+          <div class="valor">
+            <h3>Alegría</h3>
+            <p>
+              Siempre logras contagiar tu buena vibra a todos, sin importar el
+              momento.
+            </p>
+          </div>
+        </article>
+        <article class="tarjeta">
+          <span>2</span>
+          <div class="valor">
+            <h3>Inteligencia</h3>
+            <p>
+              Admiro la forma en que piensas y ves las cosas. Tienes una mente
+              brillante, bro.
+            </p>
+          </div>
+        </article>
+        <article class="tarjeta">
+          <span>3</span>
+          <div class="valor">
+            <h3>Inspiración</h3>
+            <p>
+              Tu manera de aspirar a más me motiva también a seguir creciendo.
+            </p>
+          </div>
+        </article>
+        <article class="tarjeta">
+          <span>4</span>
+          <div class="valor">
+            <h3>Compañerismo</h3>
+            <p>
+              Estar contigo siempre se siente bien. Reímos, hablamos de todo y
+              nunca faltan las risas.
+            </p>
+          </div>
+        </article>
+        <article class="tarjeta">
+          <span>5</span>
+          <div class="valor">
+            <h3>Gratitud</h3>
+            <p>
+              Gracias por ser más que un primo; eres como un hermano con el que
+              la paso increíble.
+            </p>
+          </div>
+        </article>
+        <article class="tarjeta">
+          <span>6</span>
+          <div class="valor">
+            <h3>Momentos</h3>
+            <p>
+              Cada rato que compartimos deja un recuerdo bonito. Espero que
+              sigamos sumando muchos más.
+            </p>
+          </div>
+        </article>
+        <article class="tarjeta">
+          <span>7</span>
+          <div class="valor">
+            <h3>Éxitos</h3>
+            <p>
+              Deseo que todo lo que te propongas se te cumpla, porque te lo
+              mereces de verdad.
+            </p>
+          </div>
+        </article>
+        <article class="tarjeta">
+          <span>8</span>
+          <div class="valor">
+            <h3>Buenas vibras</h3>
+            <p>
+              Tienes esa energía que hace que todo sea más divertido. Cuando
+              andamos juntos, todo fluye.
+            </p>
+          </div>
+        </article>
+        <article class="tarjeta">
+          <span>9</span>
+          <div class="valor">
+            <h3>Admiración</h3>
+            <p>
+              Nunca dejes de soñar ni de luchar por lo que quieres, porque
+              tienes todo para lograrlo.
+            </p>
+          </div>
+        </article>
+        <article class="tarjeta">
+          <span>10</span>
+          <div class="valor">
+            <h3>Cariño</h3>
+            <p>
+              A veces no se dice tanto, pero te tengo un cariño enorme. Eres
+              parte de mis mejores recuerdos.
+            </p>
+          </div>
+        </article>
+      </section>
 
-    header { text-align: center; }
-    header h1 {
-      font-family: 'Parisienne','Great Vibes','Dancing Script';
-      font-size: 48px;
-      margin: 6px 0 0 0;
-      letter-spacing: 1px;
-      text-shadow: 0 1px 0 rgba(255,255,255,0.4);
-    }
-    header p { margin: 8px 0 0 0; font-size: 20px; color: rgba(91,63,42,0.85); }
+      <footer>
+        Verte cumplir un año más me llena de orgullo y cariño. Gracias por ser
+        alguien tan auténtico, por los momentos, las risas y por siempre estar.
+        Te deseo lo mejor en cada paso que des.
+      </footer>
+    </main>
 
-    /* ===== TARJETAS ===== */
-    .tarjetas {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px 28px;
-      margin-top: 18px;
-    }
-
-    .tarjeta {
-      background: linear-gradient(180deg, #f5deb3 0%, #e7c58b 100%);
-      box-shadow: 0 8px 18px rgba(91,63,42,0.12), inset 0 2px 0 rgba(255,255,255,0.35);
-      border: 2px solid rgba(183,136,79,0.12);
-      border-radius: 10px;
-      padding: 18px;
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      transition: transform .22s ease, box-shadow .22s ease, opacity .3s ease;
-      position: relative;
-      opacity: 0;
-      transform: translateY(12px) scale(.995);
-    }
-    .tarjeta.visible { opacity: 1; transform: translateY(0) scale(1); }
-    .tarjeta:hover { transform: translateY(-6px) scale(1.01); box-shadow: 0 18px 36px rgba(91,63,42,0.16); }
-
-    .tarjeta span {
-      width: 46px; height: 46px; border-radius: 10px; display:grid; place-items:center; font-size:22px;
-      color: #b7884f; background: linear-gradient(180deg, rgba(196,154,83,0.08), transparent);
-      border:1px solid rgba(183,136,79,0.09); flex: 0 0 46px;
-    }
-
-    .valor h3 { font-family:'Dancing Script'; font-size:20px; margin:0 0 6px 0; color:#5b3f2a; }
-    .valor p { margin:0; font-size:15px; line-height:1.45; color:rgba(91,63,42,0.95); }
-
-    footer { text-align:center; margin-top:26px; font-size:16px; color:#5b3f2a; }
-    .tarjeta::before {
-      content:""; position:absolute; right:-12px; top:10px; width:22px; height:40px; border-radius:6px;
-      background:linear-gradient(90deg, rgba(0,0,0,0.06), transparent); transform: rotate(-6deg);
-      box-shadow: inset 0 6px 10px rgba(255,255,255,0.18);
-    }
-
-    /* contenedor de estrellas (estáticas y flotantes) */
-    .star-area {
-      position: absolute;
-      top: 18px;                 /* ajusta para subir/bajar las estrellas */
-      left: 24px;
-      right: 24px;
-      height: 220px;
-      pointer-events: none;
-      z-index: 8;               /* por encima del contenido del main */
-      overflow: visible;
-    }
-
-    /* ---------- Estrellas estáticas (puntitos dorados y cruzcitas) ---------- */
-    .star {
-      position: absolute;
-      border-radius: 50%;
-      opacity: 0.5;
-      filter: blur(0.2px);
-      background: radial-gradient(circle at 30% 30%, #fff8e6 0%, #e8c97a 40%, rgba(232,201,122,0) 65%);
-    }
-    .star.s-1 { width:8px; height:8px; }
-    .star.s-2 { width:7px; height:7px; }
-    .star.s-3 { width:6px; height:6px; }
-
-    /* cruz (pequeña estrella en forma de +) con pseudo-elementos */
-    .star.cross { width:10px; height:10px; background: transparent; }
-    .star.cross::before, .star.cross::after {
-      content:""; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); width:2px; height:12px;
-      background:#d8b869; border-radius:2px; opacity:0.95;
-    }
-    .star.cross::after { transform:translate(-50%,-50%) rotate(90deg); }
-
-    /* twinkle opcional */
-    @keyframes twinkle { 0%,100%{opacity:.95; transform:scale(1);} 50%{opacity:.6; transform:scale(1.12);} }
-    .star.tw { animation: twinkle 3.5s ease-in-out infinite; }
-
-    /* ---------- Estrellas / puntitos flotantes (suben levemente) ---------- */
-    .sparkle {
-      position:absolute;
-      width:6px; height:6px; border-radius:50%;
-      background: radial-gradient(circle at 30% 30%, #fff8e6 0%, #f7d887 45%, rgba(247,216,135,0) 70%);
-      opacity: 0.9; filter: blur(.1px);
-      animation: floatUp 5s linear infinite;
-    }
-    @keyframes floatUp {
-      from { transform: translateY(0) scale(.85); opacity: 0.95; }
-      to   { transform: translateY(-180px) scale(1.05); opacity: 0; }
-    }
-
-    /* ---------- Estrellas cayendo (más sutil) ---------- */
-    .fall {
-      position: fixed;
-      top: -10px;
-      width: 6px; height: 6px; border-radius: 50%;
-      background: radial-gradient(circle at 30% 30%, #fff8e6 0%, #f7d887 45%, rgba(247,216,135,0) 70%);
-      opacity: 0.5; filter: blur(.1px);
-      animation: fallY linear infinite;
-      z-index: 1000;
-    }
-
-    @keyframes fallY {
-  0% { transform: translateY(0) translateX(0) rotate(0deg); opacity:1; }
-  100% { transform: translateY(var(--fallDistance, 720px)) translateX(60px) rotate(240deg); opacity:0; }
-}
-
-    /* diferentes duraciones/delays para naturalidad */
-    .fall.f1 { left: 8%; animation-duration: 18.5s; animation-delay: 0s; }
-    .fall.f2 { left: 28%; animation-duration: 20.2s; animation-delay: 1.2s; }
-    .fall.f3 { left: 50%; animation-duration: 19.4s; animation-delay: 0.6s; }
-    .fall.f4 { left: 72%; animation-duration: 21s; animation-delay: 2.3s; }
-    .fall.f5 { left: 88%; animation-duration: 20.6s; animation-delay: 3s; }
-
-    /* responsive */
-    @media (max-width:720px) {
-      .tarjetas { grid-template-columns: 1fr; }
-      main { padding: 32px 20px 58px 20px; }
-      header h1 { font-size: 38px; }
-      .star-area { height: 140px; top: 12px; left: 12px; right: 12px; }
-    }
-  </style>
-</head>
-<body>
-  <main>
-    <!-- STAR AREA: contiene las estrellas estáticas, flotantes y las que caen -->
-    <div class="star-area" aria-hidden="true">
-      <!-- Estrellas estáticas (posiciones iniciales; si quieres las muevo) -->
-      <div class="star s-1" style="top:10%; left:8%;"></div>
-      <div class="star s-2 tw" style="top:18%; left:22%;"></div>
-      <div class="star cross" style="top:12%; left:34%; opacity:.95;"></div>
-      <div class="star s-3" style="top:22%; left:48%;"></div>
-      <div class="star s-2" style="top:8%; left:65%;"></div>
-      <div class="star s-1 tw" style="top:16%; left:78%;"></div>
-
-      <!-- Unas sparkles que suben levemente (generadas por JS también) -->
-      <!-- Y varias estrellas cayendo (también administradas por JS) -->
-    </div>
-
-    <header>
-      <h1>¡Feliz cumpleaños, Jonathan!</h1>
-      <p>Otro año más sumando historias, risas y buenos recuerdos contigo.
-Gracias por todos los momentos, por tu forma de ser y por estar siempre ahí.
-Eres más que un primo, eres alguien con quien da gusto compartir la vida. Te deseo lo mejor hoy y siempre, primo, ¡feliz cumple!</p>
-    </header>
-
-    <section class="tarjetas" aria-label="mensajes">
-      <article class="tarjeta"><span>1</span><div class="valor"><h3>Alegría</h3><p>Siempre logras contagiar tu buena vibra a todos, sin importar el momento.</p></div></article>
-      <article class="tarjeta"><span>2</span><div class="valor"><h3>Inteligencia</h3><p>Admiro la forma en que piensas y ves las cosas. Tienes una mente brillante, bro.</p></div></article>
-      <article class="tarjeta"><span>3</span><div class="valor"><h3>Inspiración</h3><p>Tu manera de aspirar a más me motiva también a seguir creciendo.</p></div></article>
-      <article class="tarjeta"><span>4</span><div class="valor"><h3>Compañerismo</h3><p>Estar contigo siempre se siente bien. Reímos, hablamos de todo y nunca faltan las risas.</p></div></article>
-      <article class="tarjeta"><span>5</span><div class="valor"><h3>Gratitud</h3><p>Gracias por ser más que un primo; eres como un hermano con el que la paso increíble.</p></div></article>
-      <article class="tarjeta"><span>6</span><div class="valor"><h3>Momentos</h3><p>Cada rato que compartimos deja un recuerdo bonito. Espero que sigamos sumando muchos más.</p></div></article>
-      <article class="tarjeta"><span>7</span><div class="valor"><h3>Éxitos</h3><p>Deseo que todo lo que te propongas se te cumpla, porque te lo mereces de verdad.</p></div></article>
-      <article class="tarjeta"><span>8</span><div class="valor"><h3>Buenas vibras</h3><p>Tienes esa energía que hace que todo sea más divertido. Cuando andamos juntos, todo fluye.</p></div></article>
-      <article class="tarjeta"><span>9</span><div class="valor"><h3>Admiración</h3><p>Nunca dejes de soñar ni de luchar por lo que quieres, porque tienes todo para lograrlo.</p></div></article>
-      <article class="tarjeta"><span>10</span><div class="valor"><h3>Cariño</h3><p>A veces no se dice tanto, pero te tengo un cariño enorme. Eres parte de mis mejores recuerdos.</p></div></article>
-    </section>
-
-    <footer>Verte cumplir un año más me llena de orgullo y cariño. Gracias por ser alguien tan auténtico, por los momentos, las risas y por siempre estar. Te deseo lo mejor en cada paso que des.</footer>
-  </main>
-
-  <script>
-    /* ===== entrada de tarjetas (la animación que ya tenías) ===== */
-    document.addEventListener('DOMContentLoaded', ()=>{
-      const cards = Array.from(document.querySelectorAll('.tarjeta'));
-      cards.forEach((c,i)=>{
-        setTimeout(()=> c.classList.add('visible'), 120 * i);
-      });
-
-      /* ===== generar sparkles (flotantes arriba dentro de star-area) ===== */
-      const starArea = document.querySelector('.star-area');
-
-     // Sparkles leves que suben (floatUp)
-for (let i = 0; i < 20; i++) {
-  const s = document.createElement('div');
-  s.className = 'sparkle';
-  s.style.left = (5 + Math.random() * 90) + '%';
-  s.style.top = (5 + Math.random() * 60) + 'px';
-  s.style.animationDelay = (Math.random() * 4) + 's';
-  s.style.opacity = 0.6 + Math.random() * 0.4;
-  starArea.appendChild(s);
-}
-
-/* ===== generar estrellas cayendo (más cantidad y con alturas variables) ===== */
-for (let i = 0; i < 60; i++) { // antes 8 → ahora 60
-  const f = document.createElement('div');
-  f.className = 'fall f' + ((i % 5) + 1);
-
-  // distribuir horizontalmente y empezar en diferentes alturas
-  f.style.left = (5 + Math.random() * 90) + '%';
-  f.style.top = (-200 - Math.random() * 200) + 'px';
-
-  // duración y delay variables
-const dur = 18 + Math.random() * 12;
-const delay = Math.random() * 10;
-f.style.animationDuration = dur + 's';
-f.style.animationDelay = delay + 's';
-
-// animación personalizada según alto del documento
-const screenHeight = document.body.scrollHeight; 
-const fallDistance = screenHeight + 400; // un poco más del total
-f.style.setProperty('--fallDistance', fallDistance + 'px');
-
-
-  // agregarlas al main para mantener el mismo stacking
-  document.body.appendChild(f);
-
-}
-
-    });
-  </script>
-</body>
+    <script defer src="jonathan.js"></script>
+    
+  </body>
 </html>
-
